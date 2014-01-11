@@ -13,3 +13,19 @@ Lexigrapher::Parser.new('0xFFF').type
 ```ruby
 :integer
 ```
+
+## What does it try and match against?
+
+To quote the source, and to give you the parser order:
+
+```ruby
+def methods
+  [
+    :int?, :float?, :symbol?, :hash?, :array?,                 # Primatives
+    :date?, :phone?, :email?, :url?, :ipv4?, :ipv6?, :gender?, # Extensions
+    :str?, :nil?, :unknown?                                    # Primitives fallback
+  ]
+end
+```
+
+Want more checks? Log an issue and let me know!

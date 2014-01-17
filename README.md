@@ -1,5 +1,7 @@
 # Lexigrapher
 
+[![Code Climate](https://codeclimate.com/github/baweaver/lexigrapher.png)](https://codeclimate.com/github/baweaver/lexigrapher)
+
 Find the type of a string. In some cases, you have a data type in a string, and you know exactly what it is. Now Ruby can too!
 
 It's as simple as:
